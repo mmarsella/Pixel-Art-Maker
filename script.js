@@ -12,15 +12,13 @@
 // Add the rest of the standard rainbow colors to the color palette
 // Add enough divs to fill up the entire screen
 
-
-
 window.onload = function(){
 
 console.log("check");
 
 
 // Create divs
-for(var i = 0; i < 1024; i++)
+for(var i = 0; i < 2508; i++)
 {
 	// Create a div
 	// Need to keep re-defining the div inside of a for-loop
@@ -102,7 +100,6 @@ function colorPallete()
 
 
 	//Create background pallete color
-	divList[divList.length - 1].style.backgroundColor = "purple";
 	divList[divList.length - 1].style.borderColor = "purple";
 	divList[divList.length - 2].style.backgroundColor = "red";
 	divList[divList.length - 3].style.backgroundColor = "green";
@@ -114,8 +111,23 @@ function colorPallete()
 	divList[divList.length - 9].style.backgroundColor = "brown";
 	divList[divList.length - 10].style.backgroundColor = "burlywood";
 	divList[divList.length - 11].style.backgroundColor = "darkseagreen";
+	divList[divList.length - 12].style.backgroundColor = "white";
+	divList[divList.length - 13].style.backgroundColor = "BlanchedAlmond";
+	divList[divList.length - 14].style.backgroundColor = "BurlyWood";
+	divList[divList.length - 15].style.backgroundColor = "Coral";
+	divList[divList.length - 16].style.backgroundColor = "Chocolate";
+	divList[divList.length - 17].style.backgroundColor = "DarkGoldenRod";
+	divList[divList.length - 18].style.backgroundColor = "GreenYellow";
+	divList[divList.length - 19].style.backgroundColor = "HotPink";
+	divList[divList.length - 20].style.backgroundColor = "Indigo";
+	divList[divList.length - 21].style.backgroundColor = "Khaki";
+	divList[divList.length - 22].style.backgroundColor = "LightBlue";
+	divList[divList.length - 23].style.backgroundColor = "LightSkyBlue";
+	divList[divList.length - 24].style.backgroundColor = "Maroon";
+	divList[divList.length - 25].style.backgroundColor = "MediumTurquoise";
+	divList[divList.length - 26].style.backgroundColor = "MidnightBlue";
 	
-	//Add class values accordinf to color
+	//Add class values to indicate its a color swapper
 	divList[divList.length - 1].classList.add("colorPallete");
 	divList[divList.length - 2].classList.add("colorPallete");
 	divList[divList.length - 3].classList.add("colorPallete");
@@ -127,6 +139,21 @@ function colorPallete()
 	divList[divList.length - 9].classList.add("colorPallete");
 	divList[divList.length - 10].classList.add("colorPallete");
 	divList[divList.length - 11].classList.add("colorPallete");
+	divList[divList.length - 12].classList.add("colorPallete");
+	divList[divList.length - 13].classList.add("colorPallete");
+	divList[divList.length - 14].classList.add("colorPallete");
+	divList[divList.length - 15].classList.add("colorPallete");
+	divList[divList.length - 16].classList.add("colorPallete");
+	divList[divList.length - 17].classList.add("colorPallete");
+	divList[divList.length - 18].classList.add("colorPallete");
+	divList[divList.length - 19].classList.add("colorPallete");
+	divList[divList.length - 20].classList.add("colorPallete");
+	divList[divList.length - 21].classList.add("colorPallete");
+	divList[divList.length - 22].classList.add("colorPallete");
+	divList[divList.length - 23].classList.add("colorPallete");
+	divList[divList.length - 24].classList.add("colorPallete");
+	divList[divList.length - 25].classList.add("colorPallete");
+	divList[divList.length - 26].classList.add("colorPallete");
 }
 
 
