@@ -1,8 +1,6 @@
 // It boils down to this: A user selects a color and clicks on 
 // pixels to paint them with the selected color.
 
-// Here's the order of steps that I would implement:
-
 // Get 10 or so small divs on the screen
 // Add an event listener to each so that when I click on a pixel it 
 // turns red
@@ -16,7 +14,6 @@ window.onload = function(){
 
 console.log("check");
 
-
 // Create divs
 for(var i = 0; i < 2508; i++)
 {
@@ -27,28 +24,22 @@ for(var i = 0; i < 2508; i++)
 	var div = document.createElement("div");
 
 	//Add Style
-
 	div.style.border = "1px solid";
 	div.style.borderCollapse = "collapse";
-	
 	div.style.width = "15px";
 	div.style.paddingBottom = "15px";
 	div.style.cssFloat = "left";
 	div.style.margin="1px";
 
-
 	// Append to parent
 	document.body.appendChild(div);
 }
 
-
-//Assign last 2 divs to be color palletes
+// Creates the color pallete on the bottom row
 colorPallete();
 
+// Allows all empty divs to change color on click
 addListener();
-
-
-
 
 
 }  // END ONLOAD
@@ -89,18 +80,10 @@ function colorSwap()
 	currentColor = this.style.backgroundColor;
 }
 
-
-
 function colorPallete()
 {
-	// Turn off color changing mode listeners to bottom row
-	//divList[divList.length - 1].removeEventListener("click",changeColor);
-	//vList[divList.length - 2].removeEventListener("click",changeColor);
-	
-
-
 	//Create background pallete color
-	divList[divList.length - 1].style.borderColor = "purple";
+	divList[divList.length - 1].style.backgroundColor = "purple";
 	divList[divList.length - 2].style.backgroundColor = "red";
 	divList[divList.length - 3].style.backgroundColor = "green";
 	divList[divList.length - 4].style.backgroundColor = "blue";
